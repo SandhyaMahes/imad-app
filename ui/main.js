@@ -26,7 +26,7 @@ var names=document.getElementById('name');
          var list='';
          for(var i=0 ; i<namess.length ; i++)
         {
-            list +="<li>"+namess[i]+"</li>";
+            list += "<li>" + namess[i] + "</li>";
         }
          var ul=document.getElementById('ulist');
      ul.innerHTML=list;
