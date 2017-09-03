@@ -24,9 +24,9 @@ var names=document.getElementById('name');
      click.onclick=function(){
          var namess=['name1','name2','name3','name4'];
          var list='';
-         for(var i=0;i<namess.length;i++)
+         for(var i=0 ; i<namess.length ; i++)
         {
-            list+="<li>"+namess[i]+"</li>";
+            list +="<li>"+namess[i]+"</li>";
         }
          var ul=document.getElementById('ulist');
      ul.innerHTML=list;
