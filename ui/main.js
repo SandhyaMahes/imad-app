@@ -19,7 +19,7 @@ request.open('GET', 'http://sandhyamaheswaran.imad.hasura-app.io/counter' ,true)
 request.send(null);
 };
 var nameInput=document.getElementById('name');
-     var name1=nameInput.value;
+     var name=nameInput.value;
      var click=document.getElementById('submit');
      click.onclick=function(){
          var names=['name1','name2','name3','name4'];
