@@ -1,5 +1,5 @@
 var button=document.gatElementById('counter');
-var counter=0;
+var counter;
 button.onclick=function()
 {
  counter+=1;
