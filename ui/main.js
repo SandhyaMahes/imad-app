@@ -14,6 +14,20 @@ button.onclick=function() {
     
  
      };
+     
 request.open('GET', 'http://sandhyamaheswaran.imad.hasura-app.io/counter' ,true);
 request.send(null);
 };
+var names=document.getElementById('name');
+     var names=name.value;
+     var click=document.getElementById('sub');
+     click.onclick=function(){
+         var namess=['name1','name2','name3'];
+         var list='';
+         for(var i=0;i<namess.length();i++)
+        {
+            list+="<li>"+namess[i]+"</li>";
+        }
+     }
+     var ul=document.getElementById('ulist');
+     ul.innerHTML=list;
