@@ -28,6 +28,7 @@ var names=document.getElementById('name');
         {
             list+="<li>"+namess[i]+"</li>";
         }
-     }
-     var ul=document.getElementById('ulist');
+         var ul=document.getElementById('ulist');
      ul.innerHTML=list;
+     };
+    
