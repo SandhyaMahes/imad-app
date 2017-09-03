@@ -20,7 +20,7 @@ request.send(null);
 };
 var nameInput=document.getElementById('name');
      var name1=nameInput.value;
-     var click=document.getElementById('sub');
+     var click=document.getElementById('submit');
      click.onclick=function(){
          var names=['name1','name2','name3','name4'];
          var list='';
