@@ -16,14 +16,18 @@ button.onclick=function() {
       }
      };
      
-request.open('GET', 'http://sandhyamaheswaran.imad.hasura-app.io/submit-name?name='+name ,true);
+request.open('GET', 'http://sandhyamaheswaran.imad.hasura-app.io/counter'+name ,true);
 request.send(null);
 };
 var nameInput=document.getElementById('name');
 var name=nameInput.value;
 var click=document.getElementById('submit');
 click.onclick=function(){
-    var names=request.responseText;
+     var request=new XMLHttpRequest();
+    request.onreadystatechange=function()
+      {if (request.readyState === XMLHttpRequest.DONE)
+        {if (request.status === 200)
+          {var names=request.responseText;
           names=JSON.parse(names);
          var list='';
          for(var i=0 ; i<names.length ; i++)
@@ -32,5 +36,9 @@ click.onclick=function(){
            }
          var ul=document.getElementById('ulist');
          ul.innerHTML = list;
+          }
+        }
 };
- 
+ request.open('GET', 'http://sandhyamaheswaran.imad.hasura-app.io/submit-name?name='+name ,true);
+request.send(null);
+};
