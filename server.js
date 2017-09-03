@@ -66,6 +66,12 @@ var htmlTemplate=`
 `;
 return htmlTemplate;
 }
+var names = [];
+app.get('/submit-name',function(req,res){
+    var name=req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
 
 var counter=0;
 app.get('/counter',function(req,res){
@@ -96,12 +102,7 @@ app.get('/ui/madi.png', function (req, res) {
  
 });
 
-var names = [];
-app.get('/submit-name',function(req,res){
-    var name=req.query.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-});
+
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
