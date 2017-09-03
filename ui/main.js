@@ -9,25 +9,17 @@ button.onclick=function() {
           names=JSON.parese(names);
          var list='';
          for(var i=0 ; i<names.length ; i++)
-        {
+          {
             list += "<li>" + names[i] + "</li>";
-        }
+           }
          var ul=document.getElementById('ulist');
          ul.innerHTML = list;
            }
     
          }
     
- 
+      };
      };
      
 request.open('GET', 'http://sandhyamaheswaran.imad.hasura-app.io/submit-name?name='+name ,true);
 request.send(null);
-};
-var nameInput=document.getElementById('name');
-     var name=nameInput.value;
-     var click=document.getElementById('submit');
-     click.onclick=function(){
-         
-     };
-    
