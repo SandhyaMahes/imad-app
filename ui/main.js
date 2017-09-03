@@ -18,7 +18,7 @@ button.onclick=function() {
 request.open('GET', 'http://sandhyamaheswaran.imad.hasura-app.io/counter' ,true);
 request.send(null);
 };
-var names=document.getElementById('name');
+var name=document.getElementById('name');
      var names=name.value;
      var click=document.getElementById('sub');
      click.onclick=function(){
