@@ -10,10 +10,11 @@ button.onclick=function()
     var span=document.getElementById("count");
     span.innerHtml=counter.toString();
     }
-    }
+    
     }
     
  
 };
 request.open('GET','http://sandhyamaheswaran.imad.hasura-app.io',true);
 request.send(null);
+};
